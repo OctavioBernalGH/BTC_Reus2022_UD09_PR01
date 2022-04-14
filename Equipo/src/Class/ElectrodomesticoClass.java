@@ -1,21 +1,54 @@
 package Class;
 
-public class ElectrodomesticoClass {
+/**
+ * 
+ * @author Octavio Bernal / David Dalmau / josep oriol lopezbosch
+ * version 0.0.1
+ */
+
+public abstract class ElectrodomesticoClass {
 	
+	//Constants
 	protected static final String COLORF	="blanco";
 	protected static final char  CONSUMOF	='F';
 	protected static double PRECIOBASEF = 100;
 	protected static double PESOF = 5;
 	
+	//Variables and defaults
 	protected double precioBase = PRECIOBASEF;
 	protected String color = COLORF;
 	protected char consumo = CONSUMOF;
 	protected double peso = PESOF;
 	
+	//Constructors
+	public ElectrodomesticoClass() {
+	}
+	
+	
+	public ElectrodomesticoClass(double precioBase, double peso) {
+		super();
+		this.precioBase = precioBase;
+		this.peso = peso;
+	}
+	
+	
+	public ElectrodomesticoClass(double precioBase, String color, char consumo, double peso) {
+		super();
+		//Transform the char to uppercase
+		char charUpper = Character.toUpperCase(consumo);
+		
+		this.precioBase = precioBase;
+		this.color = comprobarColor(color);
+		this.consumo = comprobarConsumoEnergetico(charUpper);
+		this.peso = peso;
+	}
+	
+	//Methods
+	abstract public char comprobarConsumoEnergetico(char letra);
+	abstract public String comprobarColor(String color);
+	abstract public double precioFinal(char letra, double peso);
 
-
-
-//Constructors
+/*//Constructors
 	public ElectrodomesticoClass() {
 	}
 
@@ -36,13 +69,13 @@ public class ElectrodomesticoClass {
 		this.color = comprobarColor(color);
 		this.consumo = comprobarConsumoEnergetico(charUpper);
 		this.peso = peso;
-	}
+	}*/
 	
 	
 	
 //Methods
 	
-	public static char comprobarConsumoEnergetico(char letra) {
+/*	public static char comprobarConsumoEnergetico(char letra) {
 		char letraCorrecta=CONSUMOF;
 		char [] letras = {'A', 'B', 'C', 'D', 'E','F'};
 		
@@ -96,17 +129,17 @@ public class ElectrodomesticoClass {
 			if(peso>=0 && peso<=19){
 				precioModificado = precioModificado + 10;
 				
-			}else if(peso>=20 && peso<=49) {
-				precioModificado = precioModificado + 50;
-			}else if(peso>=50 && peso<=79) {
-				precioModificado = precioModificado + 80;
-			}else if(peso>=80) {
-				precioModificado = precioModificado + 100;
-			}
+				}else if(peso>=20 && peso<=49) {
+					precioModificado = precioModificado + 50;
+				}else if(peso>=50 && peso<=79) {
+					precioModificado = precioModificado + 80;
+				}else if(peso>=80) {
+					precioModificado = precioModificado + 100;
+				}
 		
 		return precioModificado;
 	}
 
-//Getter and setters
+//Getter and setters*/
 
 }
