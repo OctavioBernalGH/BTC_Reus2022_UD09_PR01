@@ -3,12 +3,12 @@ package Class;
 public class TelevisorClass extends ElectrodomesticoClass {
 
 	/* Atributos de clase */
-	protected double resolucion;
-	protected boolean sintonizador;
+	protected double resolucion = RESOLUCIONF;
+	protected boolean sintonizador = SINTONIZADORF;
 	
 	/* Constantes por defecto */
-	protected final double RESOLUCIONF = 20.0;
-	protected final boolean SINTONIZADORF = false;
+	protected static final double RESOLUCIONF = 20.0;
+	protected static final boolean SINTONIZADORF = false;
 	
 	/* Constructor por defecto */
 	public TelevisorClass() {
@@ -28,8 +28,7 @@ public class TelevisorClass extends ElectrodomesticoClass {
 		this.resolucion = resolucion;
 		this.sintonizador = sintonizador;
 	}
-	
-	
+
 	
 	
 }
