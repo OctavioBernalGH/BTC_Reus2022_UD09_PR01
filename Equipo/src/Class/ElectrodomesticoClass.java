@@ -47,6 +47,10 @@ public abstract class ElectrodomesticoClass {
 	abstract public char comprobarConsumoEnergetico(char letra);
 	abstract public String comprobarColor(String color);
 	abstract public double precioFinal(char letra, double peso);
+	
+	//TelevisorClass method
+	abstract public double precioFinal(char letra, double peso, double resolucion, double precioBase);
+
 
 /*//Constructors
 	public ElectrodomesticoClass() {
