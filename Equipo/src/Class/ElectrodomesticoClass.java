@@ -48,7 +48,7 @@ public class ElectrodomesticoClass {
 		
 		return flag;
 	}
-	
+	//
 	
 //Getter and setters
 
