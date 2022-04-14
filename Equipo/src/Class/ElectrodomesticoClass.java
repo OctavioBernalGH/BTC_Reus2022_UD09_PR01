@@ -1,9 +1,9 @@
 package Class;
 
-/**
- * 
- * @author Octavio Bernal / David Dalmau / josep oriol lopezbosch
- * version 0.0.1
+/*
+ * @author:		Josep Oriol López Bosch / 	David Dalmau Dieguez / Octavio Bernal Vilana
+ * @fecha:		14/04/2022
+ * @versión:	0.0.1
  */
 
 public abstract class ElectrodomesticoClass {
