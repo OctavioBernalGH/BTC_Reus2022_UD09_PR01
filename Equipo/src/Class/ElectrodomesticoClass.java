@@ -10,8 +10,7 @@ public class ElectrodomesticoClass {
 	
 //Methods
 	
-<<<<<<< Updated upstream
-=======
+
 	public static boolean comprobarConsumoEnergetico(char letra) {
 		boolean flag = false;
 		
@@ -24,8 +23,7 @@ public class ElectrodomesticoClass {
 	}
 	//
 	//
-	
->>>>>>> Stashed changes
+//
 //Getter and setters
 
 }

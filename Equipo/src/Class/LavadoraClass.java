@@ -8,7 +8,6 @@ public class LavadoraClass {
 	protected final double CARGAF= 5;
 
 	public LavadoraClass(double carga) {
-		super();
 		this.carga = carga;
 	}	
 	
