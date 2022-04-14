@@ -15,6 +15,21 @@ public class TelevisorClass extends ElectrodomesticoClass {
 		this.resolucion = RESOLUCIONF;
 		this.sintonizador = SINTONIZADORF;
 	}
+
+	/* Constructor de superclase. */
+	public TelevisorClass(double precioBase, double peso) {
+		super(precioBase, peso);
+		// TODO Auto-generated constructor stub
+	}
+
+	/* Constructor de clase con superclase. */
+	public TelevisorClass(double precioBase, String color, char consumo, double peso, double resolucion, boolean sintonizador) {
+		super(precioBase, color, consumo, peso);
+		this.resolucion = resolucion;
+		this.sintonizador = sintonizador;
+	}
+	
+	
 	
 	
 }
