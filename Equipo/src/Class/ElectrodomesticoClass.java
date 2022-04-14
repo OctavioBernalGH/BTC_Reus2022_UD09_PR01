@@ -48,8 +48,18 @@ public class ElectrodomesticoClass {
 		
 		return flag;
 	}
+<<<<<<< Updated upstream
 	
 	
+=======
+	public static double precioFinal(char letra) {
+		double precioModificado = 0;
+		
+		return precioModificado;
+	}
+	
+
+>>>>>>> Stashed changes
 //Getter and setters
 
 }
