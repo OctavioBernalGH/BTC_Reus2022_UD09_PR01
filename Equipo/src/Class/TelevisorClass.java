@@ -3,8 +3,8 @@ package Class;
 public class TelevisorClass extends ElectrodomesticoClass {
 
 	/* Atributos de clase */
-	protected double resolucion = RESOLUCIONF;
-	protected boolean sintonizador = SINTONIZADORF;
+	protected double resolucion;
+	protected boolean sintonizador;
 	
 	/* Constantes por defecto */
 	protected static final double RESOLUCIONF = 20.0;
@@ -29,6 +29,27 @@ public class TelevisorClass extends ElectrodomesticoClass {
 		this.sintonizador = sintonizador;
 	}
 
-	
+	/* Getters y setters */
+	public double getResolucion() {
+		return resolucion;
+	}
+
+	public void setResolucion(double resolucion) {
+		this.resolucion = resolucion;
+	}
+
+	public boolean isSintonizador() {
+		return sintonizador;
+	}
+
+	public void setSintonizador(boolean sintonizador) {
+		this.sintonizador = sintonizador;
+	}
+
+	/* Método toString con los atributos propios de clase */
+	@Override
+	public String toString() {
+		return "TelevisorClass [resolucion=" + resolucion + ", sintonizador=" + sintonizador + "]";
+	}
 	
 }
