@@ -37,11 +37,6 @@ public class ElectrodomesticoClass {
 	
 	
 //Methods
-	
-<<<<<<< HEAD
-
-=======
->>>>>>> desarrollo_lavadora
 	public static boolean comprobarConsumoEnergetico(char letra) {
 		boolean flag = false;
 		
@@ -52,19 +47,12 @@ public class ElectrodomesticoClass {
 		
 		return flag;
 	}
-<<<<<<< HEAD
-	//
-	//
-//
-=======
+
 
 	public static double precioFinal(char letra) {
 		double precioModificado = 0;
 		
 		return precioModificado;
 	}
-
->>>>>>> desarrollo_lavadora
-//Getter and setters
 
 }
