@@ -10,6 +10,22 @@ public class ElectrodomesticoClass {
 	
 //Methods
 	
+<<<<<<< Updated upstream
+=======
+	public static boolean comprobarConsumoEnergetico(char letra) {
+		boolean flag = false;
+		
+		return flag;
+	}
+	public static boolean comprobarColor(String color) {
+		boolean flag = false;
+		
+		return flag;
+	}
+	//
+	//
+	
+>>>>>>> Stashed changes
 //Getter and setters
 
 }
