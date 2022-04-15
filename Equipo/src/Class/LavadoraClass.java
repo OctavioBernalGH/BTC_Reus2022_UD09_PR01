@@ -44,8 +44,8 @@ public class LavadoraClass extends ElectrodomesticoClass{
 	public double precioFinal (double precioBase, String color, char consumo, double peso) {
 		if (peso > 30) {
 			precioBase = precioBase + 50;
-		}
-		
+			
+		}		
 		return precioBase;
 
 	}
