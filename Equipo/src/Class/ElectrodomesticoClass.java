@@ -1,9 +1,9 @@
 package Class;
 
 /*
- * @author:		Josep Oriol López Bosch / 	David Dalmau Dieguez / Octavio Bernal Vilana
+ * @author:		Josep Oriol LÃ³pez Bosch / 	David Dalmau Dieguez / Octavio Bernal Vilana
  * @fecha:		14/04/2022
- * @versión:	0.0.1
+ * @versiÃ³n:	0.0.1
  */
 
 public abstract class ElectrodomesticoClass {
@@ -52,7 +52,7 @@ public abstract class ElectrodomesticoClass {
 	abstract public double precioFinal(char letra, double peso, double resolucion, double precioBase);
 
 
-/*//Constructors
+/*Constructors
 	public ElectrodomesticoClass() {
 	}
 
@@ -78,6 +78,10 @@ public abstract class ElectrodomesticoClass {
 	
 	
 //Methods
+
+	public static boolean comprobarConsumoEnergetico(char letra) {
+		boolean flag = false;
+
 	
 /*	public static char comprobarConsumoEnergetico(char letra) {
 		char letraCorrecta=CONSUMOF;
@@ -88,6 +92,7 @@ public abstract class ElectrodomesticoClass {
 				letraCorrecta=letra;
 			}
 		}
+
 		
 		return letraCorrecta;
 	}
@@ -102,6 +107,11 @@ public abstract class ElectrodomesticoClass {
 		}	
 		return colorCorrecto;
 	}
+
+
+
+	public static double precioFinal(char letra) {
+		double precioModificado = 0;
 
 	public static double precioFinal(char letra, double peso) {
 		double precioModificado = PRECIOBASEF;
@@ -140,10 +150,10 @@ public abstract class ElectrodomesticoClass {
 				}else if(peso>=80) {
 					precioModificado = precioModificado + 100;
 				}
+
 		
 		return precioModificado;
 	}
 
 //Getter and setters*/
-
 }

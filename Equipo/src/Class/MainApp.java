@@ -1,8 +1,8 @@
 
 /*
- * @author:		Josep Oriol LÛpez Bosch / 	David Dalmau Dieguez / Octavio Bernal Vilana
+ * @author:		Josep Oriol L√≥pez Bosch / 	David Dalmau Dieguez / Octavio Bernal Vilana
  * @fecha:		14/04/2022
- * @versiÛn:	0.0.1
+ * @versi√≥n:	0.0.1
  */
 
 package Class;
@@ -12,53 +12,59 @@ public class MainApp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		/* Instanciamos un objeto tele de la clase TelevisorClass con par·metros definidos */
+
+		LavadoraClass lavadora = new LavadoraClass();
+		System.out.println(lavadora);
+
+
+		/* Instanciamos un objeto tele de la clase TelevisorClass con par√°metros definidos */
 		TelevisorClass tele = new TelevisorClass(250, "rojo", 'a', 120, 60, false);
 		
 		/*
-		 * Precio bruto televisor =	250Ä
-		 * pulgadas > 40		  = 30% m·s
-		 * Calidad energÈtica A   = 100Ä
-		 * sintonizador false	  = 0Ä
-		 * peso > 80			  = 100Ä
+		 * Precio bruto televisor =	250‚Ç¨
+		 * pulgadas > 40		  = 30% m√°s
+		 * Calidad energ√©tica A   = 100‚Ç¨
+		 * sintonizador false	  = 0‚Ç¨
+		 * peso > 80			  = 100‚Ç¨
 		 * 
-		 * Total comprobado 525Ä
+		 * Total comprobado 525‚Ç¨
 		 */
 		
-		/* Instanciamos un objeto tele de la clase TelevisorClass con par·metros definidos */
+		/* Instanciamos un objeto tele de la clase TelevisorClass con par√°metros definidos */
 		TelevisorClass tele2 = new TelevisorClass(100, "verde", 'b', 40, 30, true);
 		
 		/*
-		 * Precio bruto televisor =	100Ä
-		 * pulgadas < 40		  = 0Ä
-		 * Calidad energÈtica B   = 80Ä
-		 * sintonizador true	  = 50Ä
-		 * peso > 80			  = 50Ä
+		 * Precio bruto televisor =	100‚Ç¨
+		 * pulgadas < 40		  = 0‚Ç¨
+		 * Calidad energ√©tica B   = 80‚Ç¨
+		 * sintonizador true	  = 50‚Ç¨
+		 * peso > 80			  = 50‚Ç¨
 		 * 
-		 * Total comprobado 280Ä
+		 * Total comprobado 280‚Ç¨
 		 */
 		
 		TelevisorClass tele3 = new TelevisorClass(100, "", 's', 40, 30, true);
 		
 		/*
-		 * Precio bruto televisor =	100Ä
-		 * pulgadas < 40		  = 0Ä
-		 * Calidad energÈtica F   = 10Ä
-		 * sintonizador true	  = 50Ä
-		 * peso > 80			  = 50Ä
+		 * Precio bruto televisor =	100‚Ç¨
+		 * pulgadas < 40		  = 0‚Ç¨
+		 * Calidad energ√©tica F   = 10‚Ç¨
+		 * sintonizador true	  = 50‚Ç¨
+		 * peso > 80			  = 50‚Ç¨
 		 * 
-		 * Total comprobado 210Ä
+		 * Total comprobado 210‚Ç¨
 		 */
 		
-		/* ComprobaciÛn del funcionamiento de la clase TelevisorClass con atributos definidos */
+		/* Comprobaci√≥n del funcionamiento de la clase TelevisorClass con atributos definidos */
 		System.out.println(tele);
 		
-		/* ComprobaciÛn del funcionamiento de la clase TelevisorClass con atributos definidos */
+		/* Comprobaci√≥n del funcionamiento de la clase TelevisorClass con atributos definidos */
 		System.out.println(tele2);
 		
-		/* ComprobaciÛn de valores por defecto de la clase abstracta heredada*/
+		/* Comprobaci√≥n de valores por defecto de la clase abstracta heredada*/
 		/* Funciona Okey */
 		System.out.println(tele3);
+
 	}
 
 }
