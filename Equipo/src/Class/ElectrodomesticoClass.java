@@ -78,10 +78,10 @@ public abstract class ElectrodomesticoClass {
 	
 	
 //Methods
-
+/*
 	public static boolean comprobarConsumoEnergetico(char letra) {
 		boolean flag = false;
-
+*/
 	
 /*	public static char comprobarConsumoEnergetico(char letra) {
 		char letraCorrecta=CONSUMOF;
