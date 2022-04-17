@@ -97,7 +97,6 @@ public class TelevisorClass extends ElectrodomesticoClass {
 	}
 
 	/* Método precioFinal exclusivo clase Televisor. */
-	@Override
 	public double precioFinal(char letra, double peso, double resolucion, double precioBase) {
 
 		double plusResolucion = 0;
@@ -147,12 +146,6 @@ public class TelevisorClass extends ElectrodomesticoClass {
 		precioTotal = plusConsumo + plusPeso + plusResolucion + plusSintonizador + precioBase;
 		
 		return precioTotal;
-	}
-
-	@Override
-	public double precioFinal(char letra, double peso) {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 }
