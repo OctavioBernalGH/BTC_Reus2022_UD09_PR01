@@ -103,4 +103,43 @@ public class LavadoraClass extends ElectrodomesticoClass {
 		return precioTotal;
 	}
 
+	/* Meto comprobarConsumoEnergetico(), comprueba que la letra es correcta. */
+	@Override
+	public char comprobarConsumoEnergetico(char letra) {
+		char letraCorrecta = CONSUMOF;
+		char[] letras = { 'A', 'B', 'C', 'D', 'E', 'F' };
+
+		for (int i = 0; i < letras.length; i++) {
+			if (letra == letras[i]) {
+				letraCorrecta = letra;
+			}
+		}
+		return letraCorrecta;
+	}
+
+	@Override
+	public String comprobarColor(String color) {
+		String colorCorrecto=COLORF;
+		String [] colores = {"blanco", "negro", "rojo", "azul", "gris"};
+		
+		for(int i=0; i<colores.length;i++) {
+			if(color.toLowerCase().equals(colores[i])) {
+				colorCorrecto = color;
+			}
+		}	
+		return colorCorrecto;
+	}
+
+	@Override
+	public double precioFinal(char letra, double peso) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double precioFinal(char letra, double peso, double resolucion, double precioBase) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

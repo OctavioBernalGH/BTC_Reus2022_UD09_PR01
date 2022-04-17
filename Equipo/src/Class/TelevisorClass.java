@@ -99,45 +99,53 @@ public class TelevisorClass extends ElectrodomesticoClass {
 	/* Método precioFinal exclusivo clase Televisor. */
 	public double precioFinal(char letra, double peso, double resolucion, double precioBase) {
 
+		double plusResolucion = 0;
+		double plusPeso = 0;
+		double plusConsumo = 0;
+		double plusSintonizador = 0;
+		double precioTotal = 0;
+		
 		/*
 		 * Según la resolución de la televisión incrementaremos su valor en un 30% o no.
 		 */
 		if (resolucion > 40) {
-			precioBase = precioBase * 1.30;
+			plusResolucion = precioBase * 1.30;
 		}
 
 		/* Si la televisión dispone de sintonizador incrementaremos su precio en 50€ */
 		if (sintonizador == true) {
-			precioBase += 50;
+			plusSintonizador += 50;
 		}
 
 		/* Según el consumo del electrodoméstico incrementaremos su precio. */
 		if (consumo == 'A') {
-			precioBase += 100;
+			plusConsumo += 100;
 		} else if (consumo == 'B') {
-			precioBase += 80;
+			plusConsumo += 80;
 		} else if (consumo == 'C') {
-			precioBase += 60;
+			plusConsumo += 60;
 		} else if (consumo == 'D') {
-			precioBase += 50;
+			plusConsumo += 50;
 		} else if (consumo == 'E') {
-			precioBase += 30;
+			plusConsumo += 30;
 		} else if (consumo == 'F') {
-			precioBase += 10;
+			plusConsumo += 10;
 		}
 
 		/* Según el peso del electrodomestico , incrementaremos su valor */
 		if (peso >= 0 && peso <= 19) {
-			precioBase += 10;
+			plusPeso += 10;
 		} else if (peso >= 20 && peso <= 49) {
-			precioBase += 50;
+			plusPeso += 50;
 		} else if (peso >= 50 && peso <= 79) {
-			precioBase += 80;
+			plusPeso += 80;
 		} else if (peso > 80) {
-			precioBase += 100;
+			plusPeso += 100;
 		}
 
-		return precioBase;
+		precioTotal = plusConsumo + plusPeso + plusResolucion + plusSintonizador + precioBase;
+		
+		return precioTotal;
 	}
 
 }
