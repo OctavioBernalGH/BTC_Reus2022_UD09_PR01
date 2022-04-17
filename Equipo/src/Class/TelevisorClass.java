@@ -2,7 +2,7 @@
 /*
  * @author:		Josep Oriol López Bosch / 	David Dalmau Dieguez / Octavio Bernal Vilana
  * @fecha:		14/04/2022
- * @versión:	0.0.1
+ * @versión:	0.0.2
  */
 
 package Class;
@@ -35,7 +35,7 @@ public class TelevisorClass extends ElectrodomesticoClass {
 		super(precioBase, color, consumo, peso);
 		this.resolucion = resolucion;
 		this.sintonizador = sintonizador;
-		this.precioBase = precioFinal(consumo, peso, resolucion, precioBase);
+		precioFinal();
 	}
 
 	/* Getters y setters solo de resolución y sintonizador */
@@ -97,14 +97,14 @@ public class TelevisorClass extends ElectrodomesticoClass {
 	}
 
 	/* Método precioFinal exclusivo clase Televisor. */
-	public double precioFinal(char letra, double peso, double resolucion, double precioBase) {
+	public double precioFinal() {
 
 		double plusResolucion = 0;
 		double plusPeso = 0;
 		double plusConsumo = 0;
 		double plusSintonizador = 0;
 		double precioTotal = 0;
-		
+
 		/*
 		 * Según la resolución de la televisión incrementaremos su valor en un 30% o no.
 		 */
@@ -144,7 +144,7 @@ public class TelevisorClass extends ElectrodomesticoClass {
 		}
 
 		precioTotal = plusConsumo + plusPeso + plusResolucion + plusSintonizador + precioBase;
-		
+
 		return precioTotal;
 	}
 

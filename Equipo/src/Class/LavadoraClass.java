@@ -1,9 +1,11 @@
-package Class;
 /*
  * @author:		Josep Oriol López Bosch / 	David Dalmau Dieguez / Octavio Bernal Vilana
  * @fecha:		16/04/2022
  * @versión:	0.0.2
  */
+
+package Class;
+
 public class LavadoraClass extends ElectrodomesticoClass {
 	// Atributos de clase
 	private double carga;
@@ -78,8 +80,8 @@ public class LavadoraClass extends ElectrodomesticoClass {
 	public double precioFinal() {
 		double precioTotal = 0;
 		double plusCarga = 0;
-		
-		if(carga > 30) {
+
+		if (carga > 30) {
 			plusCarga = precioBase * 1.50;
 		}
 
@@ -97,7 +99,7 @@ public class LavadoraClass extends ElectrodomesticoClass {
 		} else if (consumo == 'F') {
 			plusConsumoEnergetico += 10;
 		}
-		
+
 		precioTotal = plusConsumoEnergetico + plusCarga + precioBase;
 
 		return precioTotal;
@@ -106,8 +108,8 @@ public class LavadoraClass extends ElectrodomesticoClass {
 	// Generamos el método toString para dar formato al texto generado.
 	@Override
 	public String toString() {
-		return "LavadoraClass [carga=" + carga + ",  precioBase="
-				+ precioBase + ", color=" + color + ", consumo=" + consumo + ", peso=" + peso + "]";
+		return "LavadoraClass [carga=" + carga + ",  precioBase=" + precioBase + ", color=" + color + ", consumo="
+				+ consumo + ", peso=" + peso + "]";
 	}
-	
+
 }
