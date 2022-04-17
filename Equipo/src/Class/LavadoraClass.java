@@ -24,9 +24,9 @@ public class LavadoraClass extends ElectrodomesticoClass {
 	}
 
 	// Constructor completo.
-	public LavadoraClass(double precioBase, String color, char consumo, double peso) {
+	public LavadoraClass(double precioBase, String color, char consumo, double peso, double carga) {
 		super(precioBase, color, consumo, peso);
-		this.carga = CARGAF;
+		this.carga = carga;
 		precioFinal();
 	}
 
@@ -75,7 +75,7 @@ public class LavadoraClass extends ElectrodomesticoClass {
 
 	// Calculamos los pluses según la carga y el consumo energético.
 	// Sumamos los pluses al precioBase y obtenemos el precioTotal.
-	public double precioFinal(double precioBase, String color, char consumo, double peso) {
+	public double precioFinal() {
 		double precioTotal = 0;
 		double plusCarga = 0;
 		
@@ -103,43 +103,11 @@ public class LavadoraClass extends ElectrodomesticoClass {
 		return precioTotal;
 	}
 
-	/* Meto comprobarConsumoEnergetico(), comprueba que la letra es correcta. */
+	// Generamos el método toString para dar formato al texto generado.
 	@Override
-	public char comprobarConsumoEnergetico(char letra) {
-		char letraCorrecta = CONSUMOF;
-		char[] letras = { 'A', 'B', 'C', 'D', 'E', 'F' };
-
-		for (int i = 0; i < letras.length; i++) {
-			if (letra == letras[i]) {
-				letraCorrecta = letra;
-			}
-		}
-		return letraCorrecta;
+	public String toString() {
+		return "LavadoraClass [carga=" + carga + ",  precioBase="
+				+ precioBase + ", color=" + color + ", consumo=" + consumo + ", peso=" + peso + "]";
 	}
-
-	@Override
-	public String comprobarColor(String color) {
-		String colorCorrecto=COLORF;
-		String [] colores = {"blanco", "negro", "rojo", "azul", "gris"};
-		
-		for(int i=0; i<colores.length;i++) {
-			if(color.toLowerCase().equals(colores[i])) {
-				colorCorrecto = color;
-			}
-		}	
-		return colorCorrecto;
-	}
-
-	@Override
-	public double precioFinal(char letra, double peso) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public double precioFinal(char letra, double peso, double resolucion, double precioBase) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
+	
 }
