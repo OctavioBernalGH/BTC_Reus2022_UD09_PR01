@@ -2,7 +2,7 @@
 /*
  * @author:		Josep Oriol LÃ³pez Bosch / 	David Dalmau Dieguez / Octavio Bernal Vilana
  * @fecha:		16/04/2022
- * @versiÃ³n:	0.0.2
+ * @versiÃ³n:	0.1.2
  */
 
 package Class;
@@ -22,7 +22,7 @@ public class MainApp {
 		LavadoraClass fagor = new LavadoraClass(300, "negro", 'c', 30, 20);
 		LavadoraClass haler = new LavadoraClass(350, "ROJO", 'd', 15, 60);
 		LavadoraClass bmw = new LavadoraClass(400, "AZUL", 'E', 80, 100);
-		LavadoraClass industrialLav = new LavadoraClass(600, "MARRÓN", 'X', 50, 90);
+		LavadoraClass industrialLav = new LavadoraClass(600, "MARRï¿½N", 'X', 50, 90);
 		LavadoraClass lavathor = new LavadoraClass(300, "verde", 'F', 35, 40);
 		LavadoraClass lavadorax = new LavadoraClass(250, "AMARILLO", 'A', 70, 100);
 
@@ -44,7 +44,7 @@ public class MainApp {
 
 		// Recorremos el arrLavadoras y mostramos todos sus valores , la suma del
 		// precioFinal
-		// según los pluses que tienen y el precio total de todas las lavadoras.
+		// segï¿½n los pluses que tienen y el precio total de todas las lavadoras.
 		for (int i = 0; i < arrLavadoras.length; i++) {
 			System.out.println(arrLavadoras[i]);
 			precioFinalLavadoras = arrLavadoras[i].precioFinal();
@@ -88,11 +88,11 @@ public class MainApp {
 
 		// Recorremos el arrTeles y mostramos todos sus valores , la suma del
 		// precioFinal
-		// según los pluses que tienen y el precio total de todas las televisiones.
+		// segï¿½n los pluses que tienen y el precio total de todas las televisiones.
 		for (int i = 0; i < arrTeles.length; i++) {
 			System.out.println(arrTeles[i]);
 			precioFinalTelevisores = arrTeles[i].precioFinal();
-			System.out.println("Precio total televisión " + i + " con pluses es: " + arrTeles[i].precioFinal());
+			System.out.println("Precio total televisiï¿½n " + i + " con pluses es: " + arrTeles[i].precioFinal());
 			precioTotalTelevisores += precioFinalTelevisores;
 		}
 
