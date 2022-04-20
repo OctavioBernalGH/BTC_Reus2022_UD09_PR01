@@ -1,5 +1,7 @@
 # BTC_Reus2022_PR01
 
-<h2>Diagrama UML</h2>
+# Diagrama UML
 
-![Untitled Diagram drawio](https://user-images.githubusercontent.com/103035621/163351070-514d3743-b66d-44f4-ada2-86954a31c455.png)
+![Diagrama UML](https://user-images.githubusercontent.com/71066003/164334820-2ffaf5bd-21d6-46f0-aad8-c3f489ac117a.png)
+# Distribución de ramas
+![Ramas](https://user-images.githubusercontent.com/71066003/164334825-1899944a-ca16-4d21-8deb-b871479670cd.png)
